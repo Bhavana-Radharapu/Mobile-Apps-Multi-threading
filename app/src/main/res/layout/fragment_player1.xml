@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="362dp"
+    android:layout_height="353dp"
+    tools:context=".player1">
+
+    <Button
+        android:id="@+id/send_guess_p1"
+        android:layout_width="107dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="112dp"
+        android:text="SEND GUESS" />
+
+    <EditText
+        android:id="@+id/player_1_input"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/p1_list"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="138dp"
+        android:layout_toStartOf="@+id/Opponent_code_p2"
+        android:hint="Input"
+        android:maxLength="4"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/Opponent_code_p2"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/p2_guesslist"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="138dp"
+        android:editable="false"
+        android:focusable="false"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/msg_p1"
+        android:layout_width="293dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="159dp"
+        android:ems="10"
+        android:hint="Enter comment for player 2"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/p2_guesslist"
+        android:layout_width="144dp"
+        android:layout_height="94dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="24dp"
+        android:layout_toEndOf="@+id/p1_list"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/p1_list"
+        android:layout_width="150dp"
+        android:layout_height="94dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="94dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/player_1_input"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/textView4"
+        android:text="PLAYER 1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_above="@+id/Opponent_code_p2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="0dp"
+        android:text="OPPONENT"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/p2_comment"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="202dp"
+        android:text="Opponents Comment"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
